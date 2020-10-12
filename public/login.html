@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-color {
+            background-color: #fcfcfc;
+        }
+    </style>
+</head>
+
+<body class="bg-blue-500">
+    <div class="w-2/3 md:w-1/2 lg:w-1/3 xl:1/4 rounded-lg shadow-lg mx-auto mt-20 p-10 main-color"
+        style="height:650px;">
+        <h1 class="text-center text-3xl mb-3">Login</h1>
+        <form id="form" action="./login.html" method="POST">
+            <label for="email" class="block">Email:</label>
+            <input type="text" class="block w-full mt-3 mb-6 h-10 p-2 bg-gray-200" id="email" name="email"
+                placeholder="Enter email address">
+
+            <label for="password" class="block">Password:</label>
+            <input type="password" class="block w-full mt-3 mb-6 h-10 p-2 bg-gray-200" id="password" name="password"
+                placeholder="Enter password">
+
+            <button type="submit" id="submit"
+                class="block w-32 bg-green-500 hover:bg-green-600 text-white text-center font-bold mt-5 mx-auto py-2 px-4 rounded-full transition-colors duration-150 ease-in-out">
+                Submit
+            </button>
+        </form>
+    </div>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

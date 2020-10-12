@@ -1,0 +1,15 @@
+POST localhost:3000/api/places
+
+Content-Type: application/json
+
+{
+    "name": "Heh",
+    "location": {
+        "coordinates": [90, 90]
+    },
+    "reviews": [{
+        "username": "abrar",
+        "rating": "5",
+        "review": "bery good ples"
+    }],
+}
