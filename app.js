@@ -1,6 +1,5 @@
 const express = require("express");
 const path = require("path");
-const expressLayouts = require("express-ejs-layouts");
 const session = require("express-session");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
@@ -150,12 +149,10 @@ app.post("/register.html", async (req, res) => {
           newUser
             .save()
             .then((user) => {
-              res
-                .status(200)
-                .json({
-                  success: true,
-                  msg: "You are now registered and can log in",
-                });
+              res.status(200).json({
+                success: true,
+                msg: "You are now registered and can log in",
+              });
             })
             .catch((err) => console.log(err));
         });
