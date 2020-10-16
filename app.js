@@ -161,7 +161,7 @@ app.post("/register.html", async (req, res) => {
   }
 });
 app.post("/login.html", passport.authenticate("local"), (req, res) => {
-  res.status(200).redirect("./");
+  res.status(200).send("Authorized");
 });
 app.get("/logout", (req, res) => {
   req.logout();
